@@ -1,0 +1,29 @@
+[
+    {
+        "key": "1",
+        "title": "The Shape of Water",
+        "synopsis": "Still at the peak of the space race and the Cold War in early-sixties Baltimore, Elisa Esposito, a forlorn and lonely mute woman, has a mundane daily routine as a night-time janitor in a top-secret underground research facility. With literally only two friends, Zelda, the solicitous co-worker who does all the talking for both of them, and Giles, her ageing painter neighbour, Elisa will find herself thrilled with the unexpected arrival of an Amazonian Amphibian Man at the cavernous corporation. Kept on a short leash inside a confined water tank, the mysterious scaly creature is, inevitably, the centre of attention; however, as an empathetic and almost mystical bond begins to timidly bloom between species, the very survival of this rare specimen lies in the hands of an improbable and frail saviour. But can there be a future when you are trapped?",
+        "genre": ["Adventure", "Drama", "Fantasy"],
+        "posterUrl": "https://m.media-amazon.com/images/M/MV5BNGNiNWQ5M2MtNGI0OC00MDA2LWI5NzEtMmZiYjVjMDEyOWYzXkEyXkFqcGdeQXVyMjM4NTM5NDY@._V1_UX182_CR0,0,182,268_AL_.jpg" 
+    },
+    {
+        "key": "2",
+        "title": "Ready Player One",
+        "synopsis": "In the year 2045, the real world is a harsh place. The only time Wade Watts (Tye Sheridan) truly feels alive is when he escapes to the OASIS, an immersive virtual universe where most of humanity spends their days. In the OASIS, you can go anywhere, do anything, be anyone-the only limits are your own imagination. The OASIS was created by the brilliant and eccentric James Halliday (Mark Rylance), who left his immense fortune and total control of the Oasis to the winner of a three-part contest he designed to find a worthy heir. When Wade conquers the first challenge of the reality-bending treasure hunt, he and his friends-aka the High Five-are hurled into a fantastical universe of discovery and danger to save the OASIS.",
+        "genre": ["Action", "Adventure", "Sci-Fi"],
+        "posterUrl": "https://m.media-amazon.com/images/M/MV5BY2JiYTNmZTctYTQ1OC00YjU4LWEwMjYtZjkwY2Y5MDI0OTU3XkEyXkFqcGdeQXVyNTI4MzE4MDU@._V1_UX182_CR0,0,182,268_AL_.jpg"
+    },
+    {
+        "key": "3",
+        "title": "The Greatest Showman",
+        "synopsis": "Orphaned, penniless but ambitious and with a mind crammed with imagination and fresh ideas, the American Phineas Taylor Barnum will always be remembered as the man with the gift to effortlessly blur the line between reality and fiction. Thirsty for innovation and hungry for success, the son of a tailor will manage to open a wax museum but will soon shift focus to the unique and peculiar, introducing extraordinary, never-seen-before live acts on the circus stage. Some will call Barnum's wide collection of oddities, a freak show; however, when the obsessed showman gambles everything on the opera singer Jenny Lind to appeal to a high-brow audience, he will somehow lose sight of the most important aspect of his life: his family. Will Barnum risk it all to be accepted?",
+        "genre": ["Biography", "Drama", "Musical"],
+        "posterUrl": "https://m.media-amazon.com/images/M/MV5BMjI1NDYzNzY2Ml5BMl5BanBnXkFtZTgwODQwODczNTM@._V1_UY268_CR0,0,182,268_AL_.jpg"
+    },
+    {
+        "key": "4",
+        "title": "Tomb Raider",
+        "genre": ["Action", "Adventure", "Drama"],
+        "posterUrl": "https://m.media-amazon.com/images/M/MV5BOTY4NDcyZGQtYmVlNy00ODgwLTljYTMtYzQ2OTE3NDhjODMwXkEyXkFqcGdeQXVyNzYzODM3Mzg@._V1_UX182_CR0,0,182,268_AL_.jpg"
+    }
+]
