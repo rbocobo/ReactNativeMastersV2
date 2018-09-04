@@ -3,6 +3,14 @@ import { View, ScrollView, Text, Image, StyleSheet } from 'react-native';
 
 
 export default class ItemDetailScreen extends Component {
+    
+    static navigationOptions = ({ navigation }) =>  {
+        const data = navigation.getParam('data', {});
+        return {
+            title: data.title
+        }
+    }
+
     render() {
 
         const { navigation } = this.props;
