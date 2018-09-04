@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { View, ScrollView, Text, Image, StyleSheet } from 'react-native';
-
+import { Transitioner } from 'react-navigation'
 
 export default class ItemDetailScreen extends Component {
     

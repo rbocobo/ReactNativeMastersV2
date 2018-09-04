@@ -3,7 +3,7 @@ import { StyleSheet, Animated, Easing, YellowBox } from 'react-native';
 import FlatListScreen from './src/components/FlatListScreen';
 import { createStackNavigator } from 'react-navigation';
 import ItemDetailScreen from './src/components/ItemDetailScreen';
-
+import { fromLeft } from 'react-navigation-transitions'
 export default class App extends React.Component {
   render() {
     return (
@@ -26,7 +26,7 @@ const RootStack = createStackNavigator({
   }
 }, {
   initialRouteName: 'Home',
-  transitionConfig
+  transitionConfig: () => fromLeft()
 })
 
 const styles = StyleSheet.create({
@@ -38,24 +38,24 @@ const styles = StyleSheet.create({
   },
 });
 
-const transitionConfig = () => {
-  return {
-    transitionSpec: {
-      duration: 750,
-      easing: Easing.in(Easing.poly(4)),
-      timing: Animated.timing,
-      useNativeDriver: true
-    },
-    screenInterpolator: sceneProps => {
-      const { layout, position, scene } = sceneProps;
-      const thisSceneIndex = scene.index;
-      const width = layout.initWidth;
-      const translateX = position.interpolate({
-        inputRange: [thisSceneIndex - 1, thisSceneIndex, thisSceneIndex + 1],
-        outputRange: [width, 0, 0],
-      })
+// const transitionConfig = () => {
+//   return {
+//     transitionSpec: {
+//       duration: 750,
+//       easing: Easing.in(Easing.poly(4)),
+//       timing: Animated.timing,
+//       useNativeDriver: true
+//     },
+//     screenInterpolator: sceneProps => {
+//       const { layout, position, scene } = sceneProps;
+//       const thisSceneIndex = scene.index;
+//       const width = layout.initWidth;
+//       const translateX = position.interpolate({
+//         inputRange: [thisSceneIndex - 1, thisSceneIndex, thisSceneIndex + 1],
+//         outputRange: [width, 0, 0],
+//       })
 
-      return { transform: [ { translateX }]}
-    }
-  }
-}
+//       return { transform: [ { translateX }]}
+//     }
+//   }
+// }
