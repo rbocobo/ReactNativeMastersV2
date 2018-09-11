@@ -69,6 +69,7 @@ ADDED from D:\react-native\ReactNativeMastersV2\android\app\src\main\AndroidMani
 		ADDED from D:\react-native\ReactNativeMastersV2\android\app\src\main\AndroidManifest.xml:24:17-81
 uses-sdk
 INJECTED from D:\react-native\ReactNativeMastersV2\android\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [ReactNativeMastersV2:react-native-sqlite-storage:unspecified] D:\react-native\ReactNativeMastersV2\android\app\build\intermediates\exploded-aar\ReactNativeMastersV2\react-native-sqlite-storage\unspecified\AndroidManifest.xml:7:5-9:41
 MERGED from [com.facebook.react:react-native:0.55.4] D:\react-native\ReactNativeMastersV2\android\app\build\intermediates\exploded-aar\com.facebook.react\react-native\0.55.4\AndroidManifest.xml:7:5-9:41
 MERGED from [com.android.support:appcompat-v7:23.0.1] D:\react-native\ReactNativeMastersV2\android\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.0.1\AndroidManifest.xml:20:5-43
 MERGED from [com.android.support:support-v4:23.0.1] D:\react-native\ReactNativeMastersV2\android\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\AndroidManifest.xml:20:5-43

@@ -1,18 +1,22 @@
 import React, { Component } from 'react';
-import { View, Text, FlatList, StyleSheet, NetInfo } from 'react-native';
+import { View, Text, FlatList, StyleSheet, NetInfo, Image} from 'react-native';
 import { connect } from 'react-redux';
-import { listRockets } from '../../ducks/rockets';
+import { listRockets, listRocketsFromLocal, ROCKETS_KEY } from '../../ducks/rockets';
 import RocketItem from '../RocketItem';
 import { connectionState } from '../../ducks/connectivity';
 
+
 class RocketScreen extends Component {
 
-
+    
     componentDidMount() {
         NetInfo.isConnected.addEventListener('connectionChange', this.handleConnectionChange);
-        if(this.props.isConnected){
-            this.props.listRockets();
-        }
+        NetInfo.isConnected.fetch().then((isConnected) => {
+            if(isConnected == true){
+                this.props.listRockets();
+                //this.storeData();
+            }
+        });
     }
 
     componentWillUnmount() {
@@ -23,19 +27,35 @@ class RocketScreen extends Component {
         //alert(`Connection Changed:${isConnected}`);
         this.props.connectionState(isConnected);
     }
+
     
     onRefresh() {
         if(this.props.isConnected){
             this.props.listRockets();
+        }else{
+
         }
     }
+
+    // storeData = async () => {
+    //     try {
+    //         await AsyncStorage.setItem(ROCKETS_KEY, 'this.props.rockets');
+    //     } catch (error) {
+    //         alert(JSON.stringify(error));
+    //     }
+    // }
+
 
     render() {
         const rockets = this.props.rockets.map(r=>{return { ...r, key: r.id.toString() }});
         const loading = this.props.isLoading == true;
         return (
             <View style={styles.container}>
-                { !this.props.isConnected && <View style={styles.disconnectionNotice}><Text style={styles.disconnectionText}>Disconnected</Text></View>}
+                { !this.props.isConnected && 
+                <View style={styles.disconnectionNotice}>
+                    <Image style={{width:30, height: 30}} source={require('../../../assets/images/nowifi.png')}></Image>
+                    <Text style={styles.disconnectionText}>Disconnected</Text>
+                </View>}
                 <FlatList 
                 data={rockets} 
                 renderItem={({item})=> <View style={styles.itemContainer}><RocketItem rocket={item}></RocketItem></View>} 
@@ -61,7 +81,8 @@ const styles = StyleSheet.create({
         height: 40,
         backgroundColor: 'red',
         flexDirection: 'row',
-        justifyContent: 'center'
+        justifyContent: 'center',
+        alignItems: 'center'
     },
     disconnectionText: {
         color: 'white'
@@ -88,6 +109,7 @@ const mapStateToProps = ({rockets, connectivity}) => ({
 
 const mapDispatchToProps = {
     listRockets,
+    listRocketsFromLocal,
     connectionState
 }
 
@@ -96,6 +118,7 @@ const mergeProps = (
     {
         listRockets,
         connectionState,
+        listRocketsFromLocal,
         ...dispatch
     },
     ownProps
@@ -107,6 +130,7 @@ const mergeProps = (
         isLoading: rockets.isLoading,
         isConnected: connectivity.isConnected,
         listRockets: () => listRockets(),
+        listRocketsFromLocal: () => listRocketsFromLocal(),
         connectionState: status => connectionState(status)
     })
 

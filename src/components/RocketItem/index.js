@@ -22,13 +22,14 @@ const styles = StyleSheet.create({
         justifyContent: 'flex-start',
         borderWidth: 1,
         borderRadius: 4,
-        borderColor: '#ddd',
+        borderColor: '#008ba3',
+        backgroundColor: '#e0f7fa',
         borderBottomWidth: 1,
-        shadowColor: '#000',
+        shadowColor: '#e91e63',
         shadowOffset: { width: 0, height: 4 },
         shadowOpacity: 0.8,
         shadowRadius: 2,
-        elevation: 1,
+        elevation: 2,
         marginLeft: 5,
         marginRight: 5,
         marginTop: 10,
@@ -45,7 +46,8 @@ const styles = StyleSheet.create({
         marginLeft:20
     },
     rocketName:{
-        fontSize:24
+        fontSize:24,
+        fontFamily: "poppins"
     }
 })
 
