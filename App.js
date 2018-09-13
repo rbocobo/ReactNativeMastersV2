@@ -8,7 +8,7 @@ import { createStore, applyMiddleware } from 'redux';
 import { Provider, connect } from 'react-redux';
 import axios from 'axios';
 import axiosMiddleware from 'redux-axios-middleware';
-
+import thunk from 'redux-thunk';
 import reducer from './src/ducks/reducer';
 //import rockets from './src/ducks/rockets';
 //import connectivity from './src/ducks/connectivity';
@@ -21,7 +21,12 @@ const client = axios.create({
   responseType: 'json'
 });
 
-const store = createStore(reducer, applyMiddleware(axiosMiddleware(client)));
+const store = createStore(
+  reducer, 
+  applyMiddleware(
+    axiosMiddleware(client), 
+    thunk)
+  );
 
 export default class App extends Component {
   render() {
@@ -46,7 +51,10 @@ const RootStack = createStackNavigator({
     screen: ItemDetailScreen
   },
   Rocket: {
-    screen: RocketScreen
+    screen: RocketScreen,
+    navigationOptions: {
+      title: "Rockets"
+    }
   }
 }, {
   initialRouteName: 'Rocket',

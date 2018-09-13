@@ -1,13 +1,25 @@
 import React, { Component } from 'react';
-import { View, Text, FlatList, StyleSheet, NetInfo, Image} from 'react-native';
+import { View, Text, FlatList, StyleSheet, Button, NetInfo,Image, ImageBackground} from 'react-native';
 import { connect } from 'react-redux';
-import { listRockets, listRocketsFromLocal, ROCKETS_KEY } from '../../ducks/rockets';
+import { listRockets, listRocketsFromLocal, closeDB, changeBackup, getRocketsDB, ROCKETS_KEY } from '../../ducks/rockets';
 import RocketItem from '../RocketItem';
 import { connectionState } from '../../ducks/connectivity';
 
 
 class RocketScreen extends Component {
 
+    state = {
+        rockets: [],
+        isLoading: false
+    }
+
+    static getDerivedStateFromProps(props, state){
+        if(props.rockets !== state.rockets){
+            return {
+
+            }
+        }
+    }
     
     componentDidMount() {
         NetInfo.isConnected.addEventListener('connectionChange', this.handleConnectionChange);
@@ -21,6 +33,7 @@ class RocketScreen extends Component {
 
     componentWillUnmount() {
         NetInfo.isConnected.removeEventListener('connectionChange', this.handleConnectionChange);
+        this.props.closeDB();
     }
 
     handleConnectionChange = (isConnected) => {
@@ -30,32 +43,58 @@ class RocketScreen extends Component {
 
     
     onRefresh() {
-        if(this.props.isConnected){
+        if(this.props.isConnected === true){
+            console.log("CONNECTED LISTROCKETS()")
             this.props.listRockets();
         }else{
-
+            //console.log("DISCONNECTED getRocketsDB()")
+            
+            if(this.props.backup === "async")
+            this.props.listRocketsFromLocal();
+            else
+            this.props.getRocketsDB();
         }
     }
 
-    // storeData = async () => {
-    //     try {
-    //         await AsyncStorage.setItem(ROCKETS_KEY, 'this.props.rockets');
-    //     } catch (error) {
-    //         alert(JSON.stringify(error));
-    //     }
-    // }
+    storeData = async () => {
+         try {
+             await AsyncStorage.setItem(ROCKETS_KEY, JSON.stringify(this.props.rockets));
+         } catch (error) {
+             alert(JSON.stringify(error));
+         }
+    }
 
+    backupmethod = () => {
+        const { backup } = this.props;
+        let text = '';
+        if(backup == "async") {
+            text = "AsyncStorage"
+        }else text = "SQLite";
+
+        return <Text>Using {text} when offline</Text>
+    }
+
+    onpressBackup = (backup) => {
+        this.props.changeBackup(backup);
+    }
 
     render() {
         const rockets = this.props.rockets.map(r=>{return { ...r, key: r.id.toString() }});
         const loading = this.props.isLoading == true;
         return (
+
             <View style={styles.container}>
+                <Image resizeMode="stretch" style={{position: 'absolute'}} source={require('../../../assets/images/background.jpg')} ></Image>
                 { !this.props.isConnected && 
                 <View style={styles.disconnectionNotice}>
                     <Image style={{width:30, height: 30}} source={require('../../../assets/images/nowifi.png')}></Image>
                     <Text style={styles.disconnectionText}>Disconnected</Text>
                 </View>}
+                <View style={styles.backupOptions}>
+                    <Button style={styles.backupButtons} title="AsyncStorage" onPress={()=>this.onpressBackup("async")}></Button>
+                    <Button style={styles.backupButtons} title="SQLite" onPress={()=>this.onpressBackup("sqlite")}></Button>
+                    {this.backupmethod()}
+                </View>
                 <FlatList 
                 data={rockets} 
                 renderItem={({item})=> <View style={styles.itemContainer}><RocketItem rocket={item}></RocketItem></View>} 
@@ -84,9 +123,20 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center'
     },
+    backupOptions:{
+        height: 40,
+        backgroundColor: '#81c784',
+        flexDirection: 'row',
+        justifyContent: 'space-around',
+        alignItems: 'center'
+    },
+    backupButtons: {
+        marginLeft: 20
+    },
     disconnectionText: {
         color: 'white'
     }
+    
 })
 
 const renderSeparator = () => {
@@ -110,6 +160,9 @@ const mapStateToProps = ({rockets, connectivity}) => ({
 const mapDispatchToProps = {
     listRockets,
     listRocketsFromLocal,
+    getRocketsDB,
+    closeDB,
+    changeBackup,
     connectionState
 }
 
@@ -119,6 +172,9 @@ const mergeProps = (
         listRockets,
         connectionState,
         listRocketsFromLocal,
+        getRocketsDB,
+        closeDB,
+        changeBackup,
         ...dispatch
     },
     ownProps
@@ -128,24 +184,15 @@ const mergeProps = (
         ...ownProps,
         rockets: rockets.rockets,
         isLoading: rockets.isLoading,
+        backup: rockets.backup,
         isConnected: connectivity.isConnected,
         listRockets: () => listRockets(),
         listRocketsFromLocal: () => listRocketsFromLocal(),
-        connectionState: status => connectionState(status)
+        connectionState: status => connectionState(status),
+        getRocketsDB: () => getRocketsDB(),
+        closeDB: () => closeDB(),
+        changeBackup: (backup) => changeBackup(backup)
     })
 
-// const mapStateToProps = state => {
-//     const { rockets, isLoading } = state;
-//     return {
-//         isLoading,
-//         rockets
-//     };
-// };
 
-
-// const mapDispatchToProps = {
-//     listRockets
-// };
-
-// export default connect(mapStateToProps, mapDispatchToProps)(RocketScreen)
 export default connect(mapStateToProps, mapDispatchToProps, mergeProps)(RocketScreen)
