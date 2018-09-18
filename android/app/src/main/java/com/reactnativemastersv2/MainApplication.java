@@ -3,6 +3,7 @@ package com.reactnativemastersv2;
 import android.app.Application;
 
 import com.facebook.react.ReactApplication;
+import io.invertase.firebase.RNFirebasePackage;
 import com.facebook.react.ReactNativeHost;
 import com.facebook.react.ReactPackage;
 import com.facebook.react.shell.MainReactPackage;
@@ -12,6 +13,9 @@ import java.util.Arrays;
 import java.util.List;
 
 import org.pgsqlite.SQLitePluginPackage;
+import com.wix.RNCameraKit.RNCameraKitPackage;
+import io.invertase.firebase.RNFirebasePackage;
+import io.invertase.firebase.firestore.RNFirebaseFirestorePackage;
 
 public class MainApplication extends Application implements ReactApplication {
 
@@ -25,7 +29,10 @@ public class MainApplication extends Application implements ReactApplication {
     protected List<ReactPackage> getPackages() {
       return Arrays.<ReactPackage>asList(
           new SQLitePluginPackage(),
-          new MainReactPackage()
+          new RNCameraKitPackage(),
+          new MainReactPackage(),
+          new RNFirebasePackage(),
+          new RNFirebaseFirestorePackage()
       );
     }
 

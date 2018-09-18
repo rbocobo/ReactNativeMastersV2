@@ -1,0 +1,10 @@
+#Tue Sep 18 00:41:17 CST 2018
+path.2=classes3.dex
+path.1=classes2.dex
+path.0=classes.dex
+renamed.2=classes3.dex
+renamed.1=classes2.dex
+renamed.0=classes.dex
+base.2=D\:\\react-native\\ReactNativeMastersV2\\android\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
+base.1=D\:\\react-native\\ReactNativeMastersV2\\android\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
+base.0=D\:\\react-native\\ReactNativeMastersV2\\android\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0

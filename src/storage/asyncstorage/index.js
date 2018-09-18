@@ -17,24 +17,3 @@ export async function listRocketsFromLocal(){
     }
     //}
 }
-
-// export async function saveToAsyncStorage({key, value}){
-//     try {
-//         await AsyncStorage.setItem(key, JSON.stringify(value));
-//     } catch (error) {
-//         alert("ERROR SAVING TO ASYNCSTORAGE");
-//     }
-// }
-
-// export async function listRocketsFromLocal(){
-//     try {
-//         const rockets = await AsyncStorage.getItem(ROCKETS_KEY);
-//         if(value !== null) {
-//             return JSON.parse(rockets)
-//         }
-        
-//     }catch (error) {
-//         alert("ERROR FETCHING FROM ASYNCSTORAGE");
-//     }
-//     //}
-// }
