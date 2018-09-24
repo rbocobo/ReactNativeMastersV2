@@ -8,6 +8,7 @@ MERGED from [:react-native-firebase] D:\react-native\ReactNativeMastersV2\node_m
 MERGED from [com.android.support:multidex:1.0.3] C:\Users\rhoderickb\.gradle\caches\transforms-1\files-1.1\multidex-1.0.3.aar\0cd0c6c17926c74523b35e58248cf2fd\AndroidManifest.xml:17:1-22:12
 MERGED from [:react-native-sqlite-storage] D:\react-native\ReactNativeMastersV2\node_modules\react-native-sqlite-storage\src\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:2:1-11:12
 MERGED from [:rncamerakit] D:\react-native\ReactNativeMastersV2\node_modules\react-native-camera-kit\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:2:1-15:12
+MERGED from [:reactnativenotifications] D:\react-native\ReactNativeMastersV2\node_modules\react-native-notifications\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:2:1-65:12
 MERGED from [com.facebook.react:react-native:0.55.4] C:\Users\rhoderickb\.gradle\caches\transforms-1\files-1.1\react-native-0.55.4.aar\0a7bf7c3f908b542a2c5da5026f08efa\AndroidManifest.xml:2:1-15:12
 MERGED from [com.android.support:appcompat-v7:27.0.2] C:\Users\rhoderickb\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.0.2.aar\6832dca6b9cf74c7f23d877065f8a5da\AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.firebase:firebase-core:16.0.1] C:\Users\rhoderickb\.gradle\caches\transforms-1\files-1.1\firebase-core-16.0.1.aar\f0b9d16f8e659b83d7a34a240e4d12b2\AndroidManifest.xml:2:1-9:12
@@ -18,6 +19,8 @@ MERGED from [com.google.firebase:firebase-analytics:16.0.1] C:\Users\rhoderickb\
 MERGED from [com.google.firebase:firebase-analytics-impl:16.1.1] C:\Users\rhoderickb\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-16.1.1.aar\e2bef9336db5528a5e80aa42aa41ee43\AndroidManifest.xml:17:1-40:12
 MERGED from [com.google.firebase:firebase-iid:16.0.0] C:\Users\rhoderickb\.gradle\caches\transforms-1\files-1.1\firebase-iid-16.0.0.aar\9baf0d9106b956306be733437328c649\AndroidManifest.xml:17:1-65:12
 MERGED from [com.google.firebase:firebase-common:16.0.0] C:\Users\rhoderickb\.gradle\caches\transforms-1\files-1.1\firebase-common-16.0.0.aar\125be261b03bbf385d306efe00be09e2\AndroidManifest.xml:2:1-16:12
+MERGED from [com.google.android.gms:play-services-gcm:15.0.1] C:\Users\rhoderickb\.gradle\caches\transforms-1\files-1.1\play-services-gcm-15.0.1.aar\85d029289feef10676a86b4dbf2d38e0\AndroidManifest.xml:17:1-28:12
+MERGED from [com.google.android.gms:play-services-iid:15.0.1] C:\Users\rhoderickb\.gradle\caches\transforms-1\files-1.1\play-services-iid-15.0.1.aar\ae6b5c7459b806d561ef2c3cb57357b3\AndroidManifest.xml:17:1-28:12
 MERGED from [com.google.firebase:firebase-iid-interop:16.0.0] C:\Users\rhoderickb\.gradle\caches\transforms-1\files-1.1\firebase-iid-interop-16.0.0.aar\383fd3f50f9d36933972522de1f51a77\AndroidManifest.xml:2:1-10:12
 MERGED from [com.google.android.gms:play-services-base:15.0.1] C:\Users\rhoderickb\.gradle\caches\transforms-1\files-1.1\play-services-base-15.0.1.aar\9cead5555c43209060cdd0eca6a1fd7d\AndroidManifest.xml:17:1-29:12
 MERGED from [com.google.android.gms:play-services-tasks:15.0.1] C:\Users\rhoderickb\.gradle\caches\transforms-1\files-1.1\play-services-tasks-15.0.1.aar\04862c839ce4add3abfdd2879dcf9cf7\AndroidManifest.xml:2:1-9:12
@@ -75,6 +78,10 @@ MERGED from [com.google.firebase:firebase-analytics-impl:16.1.1] C:\Users\rhoder
 MERGED from [com.google.firebase:firebase-analytics-impl:16.1.1] C:\Users\rhoderickb\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-16.1.1.aar\e2bef9336db5528a5e80aa42aa41ee43\AndroidManifest.xml:23:5-67
 MERGED from [com.google.firebase:firebase-iid:16.0.0] C:\Users\rhoderickb\.gradle\caches\transforms-1\files-1.1\firebase-iid-16.0.0.aar\9baf0d9106b956306be733437328c649\AndroidManifest.xml:23:5-67
 MERGED from [com.google.firebase:firebase-iid:16.0.0] C:\Users\rhoderickb\.gradle\caches\transforms-1\files-1.1\firebase-iid-16.0.0.aar\9baf0d9106b956306be733437328c649\AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-gcm:15.0.1] C:\Users\rhoderickb\.gradle\caches\transforms-1\files-1.1\play-services-gcm-15.0.1.aar\85d029289feef10676a86b4dbf2d38e0\AndroidManifest.xml:24:5-67
+MERGED from [com.google.android.gms:play-services-gcm:15.0.1] C:\Users\rhoderickb\.gradle\caches\transforms-1\files-1.1\play-services-gcm-15.0.1.aar\85d029289feef10676a86b4dbf2d38e0\AndroidManifest.xml:24:5-67
+MERGED from [com.google.android.gms:play-services-iid:15.0.1] C:\Users\rhoderickb\.gradle\caches\transforms-1\files-1.1\play-services-iid-15.0.1.aar\ae6b5c7459b806d561ef2c3cb57357b3\AndroidManifest.xml:24:5-67
+MERGED from [com.google.android.gms:play-services-iid:15.0.1] C:\Users\rhoderickb\.gradle\caches\transforms-1\files-1.1\play-services-iid-15.0.1.aar\ae6b5c7459b806d561ef2c3cb57357b3\AndroidManifest.xml:24:5-67
 	android:name
 		ADDED from D:\react-native\ReactNativeMastersV2\android\app\src\main\AndroidManifest.xml:4:22-64
 uses-permission#android.permission.SYSTEM_ALERT_WINDOW
@@ -99,6 +106,8 @@ MERGED from [com.google.firebase:firebase-iid:16.0.0] C:\Users\rhoderickb\.gradl
 		ADDED from D:\react-native\ReactNativeMastersV2\android\app\src\main\AndroidManifest.xml:6:22-76
 application
 ADDED from D:\react-native\ReactNativeMastersV2\android\app\src\main\AndroidManifest.xml:8:5-25:19
+MERGED from [:reactnativenotifications] D:\react-native\ReactNativeMastersV2\node_modules\react-native-notifications\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:23:5-63:19
+MERGED from [:reactnativenotifications] D:\react-native\ReactNativeMastersV2\node_modules\react-native-notifications\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:23:5-63:19
 MERGED from [com.facebook.react:react-native:0.55.4] C:\Users\rhoderickb\.gradle\caches\transforms-1\files-1.1\react-native-0.55.4.aar\0a7bf7c3f908b542a2c5da5026f08efa\AndroidManifest.xml:13:5-20
 MERGED from [com.facebook.react:react-native:0.55.4] C:\Users\rhoderickb\.gradle\caches\transforms-1\files-1.1\react-native-0.55.4.aar\0a7bf7c3f908b542a2c5da5026f08efa\AndroidManifest.xml:13:5-20
 MERGED from [com.google.firebase:firebase-core:16.0.1] C:\Users\rhoderickb\.gradle\caches\transforms-1\files-1.1\firebase-core-16.0.1.aar\f0b9d16f8e659b83d7a34a240e4d12b2\AndroidManifest.xml:7:5-20
@@ -115,6 +124,10 @@ MERGED from [com.google.firebase:firebase-iid:16.0.0] C:\Users\rhoderickb\.gradl
 MERGED from [com.google.firebase:firebase-iid:16.0.0] C:\Users\rhoderickb\.gradle\caches\transforms-1\files-1.1\firebase-iid-16.0.0.aar\9baf0d9106b956306be733437328c649\AndroidManifest.xml:34:5-63:19
 MERGED from [com.google.firebase:firebase-common:16.0.0] C:\Users\rhoderickb\.gradle\caches\transforms-1\files-1.1\firebase-common-16.0.0.aar\125be261b03bbf385d306efe00be09e2\AndroidManifest.xml:8:5-14:19
 MERGED from [com.google.firebase:firebase-common:16.0.0] C:\Users\rhoderickb\.gradle\caches\transforms-1\files-1.1\firebase-common-16.0.0.aar\125be261b03bbf385d306efe00be09e2\AndroidManifest.xml:8:5-14:19
+MERGED from [com.google.android.gms:play-services-gcm:15.0.1] C:\Users\rhoderickb\.gradle\caches\transforms-1\files-1.1\play-services-gcm-15.0.1.aar\85d029289feef10676a86b4dbf2d38e0\AndroidManifest.xml:26:5-20
+MERGED from [com.google.android.gms:play-services-gcm:15.0.1] C:\Users\rhoderickb\.gradle\caches\transforms-1\files-1.1\play-services-gcm-15.0.1.aar\85d029289feef10676a86b4dbf2d38e0\AndroidManifest.xml:26:5-20
+MERGED from [com.google.android.gms:play-services-iid:15.0.1] C:\Users\rhoderickb\.gradle\caches\transforms-1\files-1.1\play-services-iid-15.0.1.aar\ae6b5c7459b806d561ef2c3cb57357b3\AndroidManifest.xml:26:5-20
+MERGED from [com.google.android.gms:play-services-iid:15.0.1] C:\Users\rhoderickb\.gradle\caches\transforms-1\files-1.1\play-services-iid-15.0.1.aar\ae6b5c7459b806d561ef2c3cb57357b3\AndroidManifest.xml:26:5-20
 MERGED from [com.google.firebase:firebase-iid-interop:16.0.0] C:\Users\rhoderickb\.gradle\caches\transforms-1\files-1.1\firebase-iid-interop-16.0.0.aar\383fd3f50f9d36933972522de1f51a77\AndroidManifest.xml:7:5-8:19
 MERGED from [com.google.firebase:firebase-iid-interop:16.0.0] C:\Users\rhoderickb\.gradle\caches\transforms-1\files-1.1\firebase-iid-interop-16.0.0.aar\383fd3f50f9d36933972522de1f51a77\AndroidManifest.xml:7:5-8:19
 MERGED from [com.google.android.gms:play-services-base:15.0.1] C:\Users\rhoderickb\.gradle\caches\transforms-1\files-1.1\play-services-base-15.0.1.aar\9cead5555c43209060cdd0eca6a1fd7d\AndroidManifest.xml:22:5-27:19
@@ -181,6 +194,8 @@ MERGED from [:react-native-sqlite-storage] D:\react-native\ReactNativeMastersV2\
 MERGED from [:react-native-sqlite-storage] D:\react-native\ReactNativeMastersV2\node_modules\react-native-sqlite-storage\src\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:7:5-9:41
 MERGED from [:rncamerakit] D:\react-native\ReactNativeMastersV2\node_modules\react-native-camera-kit\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:7:5-9:41
 MERGED from [:rncamerakit] D:\react-native\ReactNativeMastersV2\node_modules\react-native-camera-kit\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:reactnativenotifications] D:\react-native\ReactNativeMastersV2\node_modules\react-native-notifications\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:reactnativenotifications] D:\react-native\ReactNativeMastersV2\node_modules\react-native-notifications\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:7:5-9:41
 MERGED from [com.facebook.react:react-native:0.55.4] C:\Users\rhoderickb\.gradle\caches\transforms-1\files-1.1\react-native-0.55.4.aar\0a7bf7c3f908b542a2c5da5026f08efa\AndroidManifest.xml:7:5-9:41
 MERGED from [com.facebook.react:react-native:0.55.4] C:\Users\rhoderickb\.gradle\caches\transforms-1\files-1.1\react-native-0.55.4.aar\0a7bf7c3f908b542a2c5da5026f08efa\AndroidManifest.xml:7:5-9:41
 MERGED from [com.android.support:appcompat-v7:27.0.2] C:\Users\rhoderickb\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.0.2.aar\6832dca6b9cf74c7f23d877065f8a5da\AndroidManifest.xml:20:5-44
@@ -201,6 +216,10 @@ MERGED from [com.google.firebase:firebase-iid:16.0.0] C:\Users\rhoderickb\.gradl
 MERGED from [com.google.firebase:firebase-iid:16.0.0] C:\Users\rhoderickb\.gradle\caches\transforms-1\files-1.1\firebase-iid-16.0.0.aar\9baf0d9106b956306be733437328c649\AndroidManifest.xml:20:5-44
 MERGED from [com.google.firebase:firebase-common:16.0.0] C:\Users\rhoderickb\.gradle\caches\transforms-1\files-1.1\firebase-common-16.0.0.aar\125be261b03bbf385d306efe00be09e2\AndroidManifest.xml:5:5-6:37
 MERGED from [com.google.firebase:firebase-common:16.0.0] C:\Users\rhoderickb\.gradle\caches\transforms-1\files-1.1\firebase-common-16.0.0.aar\125be261b03bbf385d306efe00be09e2\AndroidManifest.xml:5:5-6:37
+MERGED from [com.google.android.gms:play-services-gcm:15.0.1] C:\Users\rhoderickb\.gradle\caches\transforms-1\files-1.1\play-services-gcm-15.0.1.aar\85d029289feef10676a86b4dbf2d38e0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-gcm:15.0.1] C:\Users\rhoderickb\.gradle\caches\transforms-1\files-1.1\play-services-gcm-15.0.1.aar\85d029289feef10676a86b4dbf2d38e0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-iid:15.0.1] C:\Users\rhoderickb\.gradle\caches\transforms-1\files-1.1\play-services-iid-15.0.1.aar\ae6b5c7459b806d561ef2c3cb57357b3\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-iid:15.0.1] C:\Users\rhoderickb\.gradle\caches\transforms-1\files-1.1\play-services-iid-15.0.1.aar\ae6b5c7459b806d561ef2c3cb57357b3\AndroidManifest.xml:20:5-44
 MERGED from [com.google.firebase:firebase-iid-interop:16.0.0] C:\Users\rhoderickb\.gradle\caches\transforms-1\files-1.1\firebase-iid-interop-16.0.0.aar\383fd3f50f9d36933972522de1f51a77\AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-iid-interop:16.0.0] C:\Users\rhoderickb\.gradle\caches\transforms-1\files-1.1\firebase-iid-interop-16.0.0.aar\383fd3f50f9d36933972522de1f51a77\AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-base:15.0.1] C:\Users\rhoderickb\.gradle\caches\transforms-1\files-1.1\play-services-base-15.0.1.aar\9cead5555c43209060cdd0eca6a1fd7d\AndroidManifest.xml:20:5-44
@@ -289,6 +308,98 @@ uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
 ADDED from [:rncamerakit] D:\react-native\ReactNativeMastersV2\node_modules\react-native-camera-kit\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:13:5-81
 	android:name
 		ADDED from [:rncamerakit] D:\react-native\ReactNativeMastersV2\node_modules\react-native-camera-kit\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:13:22-78
+permission#${applicationId}.permission.C2D_MESSAGE
+ADDED from [:reactnativenotifications] D:\react-native\ReactNativeMastersV2\node_modules\react-native-notifications\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:12:5-14:47
+MERGED from [com.google.firebase:firebase-iid:16.0.0] C:\Users\rhoderickb\.gradle\caches\transforms-1\files-1.1\firebase-iid-16.0.0.aar\9baf0d9106b956306be733437328c649\AndroidManifest.xml:28:5-30:47
+MERGED from [com.google.firebase:firebase-iid:16.0.0] C:\Users\rhoderickb\.gradle\caches\transforms-1\files-1.1\firebase-iid-16.0.0.aar\9baf0d9106b956306be733437328c649\AndroidManifest.xml:28:5-30:47
+	android:protectionLevel
+		ADDED from [:reactnativenotifications] D:\react-native\ReactNativeMastersV2\node_modules\react-native-notifications\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:14:9-44
+	android:name
+		ADDED from [:reactnativenotifications] D:\react-native\ReactNativeMastersV2\node_modules\react-native-notifications\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:13:9-63
+permission#com.reactnativemastersv2.permission.C2D_MESSAGE
+ADDED from [:reactnativenotifications] D:\react-native\ReactNativeMastersV2\node_modules\react-native-notifications\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:12:5-14:47
+MERGED from [com.google.firebase:firebase-iid:16.0.0] C:\Users\rhoderickb\.gradle\caches\transforms-1\files-1.1\firebase-iid-16.0.0.aar\9baf0d9106b956306be733437328c649\AndroidManifest.xml:28:5-30:47
+MERGED from [com.google.firebase:firebase-iid:16.0.0] C:\Users\rhoderickb\.gradle\caches\transforms-1\files-1.1\firebase-iid-16.0.0.aar\9baf0d9106b956306be733437328c649\AndroidManifest.xml:28:5-30:47
+	android:protectionLevel
+		ADDED from [:reactnativenotifications] D:\react-native\ReactNativeMastersV2\node_modules\react-native-notifications\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:14:9-44
+	android:name
+		ADDED from [:reactnativenotifications] D:\react-native\ReactNativeMastersV2\node_modules\react-native-notifications\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:13:9-63
+uses-permission#${applicationId}.permission.C2D_MESSAGE
+ADDED from [:reactnativenotifications] D:\react-native\ReactNativeMastersV2\node_modules\react-native-notifications\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:16:5-79
+MERGED from [com.google.firebase:firebase-iid:16.0.0] C:\Users\rhoderickb\.gradle\caches\transforms-1\files-1.1\firebase-iid-16.0.0.aar\9baf0d9106b956306be733437328c649\AndroidManifest.xml:32:5-79
+MERGED from [com.google.firebase:firebase-iid:16.0.0] C:\Users\rhoderickb\.gradle\caches\transforms-1\files-1.1\firebase-iid-16.0.0.aar\9baf0d9106b956306be733437328c649\AndroidManifest.xml:32:5-79
+	android:name
+		ADDED from [:reactnativenotifications] D:\react-native\ReactNativeMastersV2\node_modules\react-native-notifications\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:16:22-76
+uses-permission#com.reactnativemastersv2.permission.C2D_MESSAGE
+ADDED from [:reactnativenotifications] D:\react-native\ReactNativeMastersV2\node_modules\react-native-notifications\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:16:5-79
+MERGED from [com.google.firebase:firebase-iid:16.0.0] C:\Users\rhoderickb\.gradle\caches\transforms-1\files-1.1\firebase-iid-16.0.0.aar\9baf0d9106b956306be733437328c649\AndroidManifest.xml:32:5-79
+MERGED from [com.google.firebase:firebase-iid:16.0.0] C:\Users\rhoderickb\.gradle\caches\transforms-1\files-1.1\firebase-iid-16.0.0.aar\9baf0d9106b956306be733437328c649\AndroidManifest.xml:32:5-79
+	android:name
+		ADDED from [:reactnativenotifications] D:\react-native\ReactNativeMastersV2\node_modules\react-native-notifications\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:16:22-76
+uses-permission#android.permission.VIBRATE
+ADDED from [:reactnativenotifications] D:\react-native\ReactNativeMastersV2\node_modules\react-native-notifications\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:19:5-21:38
+	android:maxSdkVersion
+		ADDED from [:reactnativenotifications] D:\react-native\ReactNativeMastersV2\node_modules\react-native-notifications\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:21:9-35
+	android:name
+		ADDED from [:reactnativenotifications] D:\react-native\ReactNativeMastersV2\node_modules\react-native-notifications\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:20:9-50
+service#com.wix.reactnativenotifications.core.ProxyService
+ADDED from [:reactnativenotifications] D:\react-native\ReactNativeMastersV2\node_modules\react-native-notifications\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:26:9-86
+	android:name
+		ADDED from [:reactnativenotifications] D:\react-native\ReactNativeMastersV2\node_modules\react-native-notifications\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:26:18-83
+receiver#com.google.android.gms.gcm.GcmReceiver
+ADDED from [:reactnativenotifications] D:\react-native\ReactNativeMastersV2\node_modules\react-native-notifications\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:33:9-43:20
+	android:exported
+		ADDED from [:reactnativenotifications] D:\react-native\ReactNativeMastersV2\node_modules\react-native-notifications\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:35:13-36
+	android:permission
+		ADDED from [:reactnativenotifications] D:\react-native\ReactNativeMastersV2\node_modules\react-native-notifications\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:36:13-73
+	android:name
+		ADDED from [:reactnativenotifications] D:\react-native\ReactNativeMastersV2\node_modules\react-native-notifications\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:34:13-66
+intent-filter#action:name:com.google.android.c2dm.intent.RECEIVE+action:name:com.google.android.c2dm.intent.REGISTRATION+category:name:${applicationId}
+ADDED from [:reactnativenotifications] D:\react-native\ReactNativeMastersV2\node_modules\react-native-notifications\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:37:13-42:29
+intent-filter#action:name:com.google.android.c2dm.intent.RECEIVE+action:name:com.google.android.c2dm.intent.REGISTRATION+category:name:com.reactnativemastersv2
+ADDED from [:reactnativenotifications] D:\react-native\ReactNativeMastersV2\node_modules\react-native-notifications\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:37:13-42:29
+action#com.google.android.c2dm.intent.RECEIVE
+ADDED from [:reactnativenotifications] D:\react-native\ReactNativeMastersV2\node_modules\react-native-notifications\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:38:17-81
+	android:name
+		ADDED from [:reactnativenotifications] D:\react-native\ReactNativeMastersV2\node_modules\react-native-notifications\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:38:25-78
+action#com.google.android.c2dm.intent.REGISTRATION
+ADDED from [:reactnativenotifications] D:\react-native\ReactNativeMastersV2\node_modules\react-native-notifications\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:39:17-86
+	android:name
+		ADDED from [:reactnativenotifications] D:\react-native\ReactNativeMastersV2\node_modules\react-native-notifications\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:39:25-83
+category#${applicationId}
+ADDED from [:reactnativenotifications] D:\react-native\ReactNativeMastersV2\node_modules\react-native-notifications\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:41:17-61
+	android:name
+		ADDED from [:reactnativenotifications] D:\react-native\ReactNativeMastersV2\node_modules\react-native-notifications\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:41:27-58
+category#com.reactnativemastersv2
+ADDED from [:reactnativenotifications] D:\react-native\ReactNativeMastersV2\node_modules\react-native-notifications\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:41:17-61
+	android:name
+		ADDED from [:reactnativenotifications] D:\react-native\ReactNativeMastersV2\node_modules\react-native-notifications\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:41:27-58
+service#com.wix.reactnativenotifications.gcm.GcmMessageHandlerService
+ADDED from [:reactnativenotifications] D:\react-native\ReactNativeMastersV2\node_modules\react-native-notifications\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:45:9-51:19
+	android:exported
+		ADDED from [:reactnativenotifications] D:\react-native\ReactNativeMastersV2\node_modules\react-native-notifications\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:47:13-37
+	android:name
+		ADDED from [:reactnativenotifications] D:\react-native\ReactNativeMastersV2\node_modules\react-native-notifications\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:46:13-89
+intent-filter#action:name:com.google.android.c2dm.intent.RECEIVE
+ADDED from [:reactnativenotifications] D:\react-native\ReactNativeMastersV2\node_modules\react-native-notifications\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:48:13-50:29
+service#com.wix.reactnativenotifications.gcm.GcmInstanceIdListenerService
+ADDED from [:reactnativenotifications] D:\react-native\ReactNativeMastersV2\node_modules\react-native-notifications\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:53:9-59:19
+	android:exported
+		ADDED from [:reactnativenotifications] D:\react-native\ReactNativeMastersV2\node_modules\react-native-notifications\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:55:13-37
+	android:name
+		ADDED from [:reactnativenotifications] D:\react-native\ReactNativeMastersV2\node_modules\react-native-notifications\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:54:13-93
+intent-filter#action:name:com.google.android.gms.iid.InstanceID
+ADDED from [:reactnativenotifications] D:\react-native\ReactNativeMastersV2\node_modules\react-native-notifications\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:56:13-58:29
+action#com.google.android.gms.iid.InstanceID
+ADDED from [:reactnativenotifications] D:\react-native\ReactNativeMastersV2\node_modules\react-native-notifications\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:57:17-80
+	android:name
+		ADDED from [:reactnativenotifications] D:\react-native\ReactNativeMastersV2\node_modules\react-native-notifications\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:57:25-77
+service#com.wix.reactnativenotifications.gcm.GcmInstanceIdRefreshHandlerService
+ADDED from [:reactnativenotifications] D:\react-native\ReactNativeMastersV2\node_modules\react-native-notifications\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:60:9-62:40
+	android:exported
+		ADDED from [:reactnativenotifications] D:\react-native\ReactNativeMastersV2\node_modules\react-native-notifications\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:62:13-37
+	android:name
+		ADDED from [:reactnativenotifications] D:\react-native\ReactNativeMastersV2\node_modules\react-native-notifications\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:61:13-99
 service#com.google.firebase.components.ComponentDiscoveryService
 ADDED from [com.google.firebase:firebase-firestore:17.0.2] C:\Users\rhoderickb\.gradle\caches\transforms-1\files-1.1\firebase-firestore-17.0.2.aar\961b2c3daa1aa3c56a3ecce47d8ec7d5\AndroidManifest.xml:11:9-15:19
 MERGED from [com.google.firebase:firebase-measurement-connector-impl:16.0.1] C:\Users\rhoderickb\.gradle\caches\transforms-1\files-1.1\firebase-measurement-connector-impl-16.0.1.aar\186c8bebd4280370b99a1bf68c1632d3\AndroidManifest.xml:27:9-31:19
@@ -361,28 +472,12 @@ ADDED from [com.google.firebase:firebase-analytics:16.0.1] C:\Users\rhoderickb\.
 		ADDED from [com.google.firebase:firebase-analytics:16.0.1] C:\Users\rhoderickb\.gradle\caches\transforms-1\files-1.1\firebase-analytics-16.0.1.aar\32b77696d0efa20075d025f844e2772e\AndroidManifest.xml:49:13-87
 uses-permission#com.google.android.c2dm.permission.RECEIVE
 ADDED from [com.google.firebase:firebase-iid:16.0.0] C:\Users\rhoderickb\.gradle\caches\transforms-1\files-1.1\firebase-iid-16.0.0.aar\9baf0d9106b956306be733437328c649\AndroidManifest.xml:26:5-82
+MERGED from [com.google.android.gms:play-services-gcm:15.0.1] C:\Users\rhoderickb\.gradle\caches\transforms-1\files-1.1\play-services-gcm-15.0.1.aar\85d029289feef10676a86b4dbf2d38e0\AndroidManifest.xml:23:5-82
+MERGED from [com.google.android.gms:play-services-gcm:15.0.1] C:\Users\rhoderickb\.gradle\caches\transforms-1\files-1.1\play-services-gcm-15.0.1.aar\85d029289feef10676a86b4dbf2d38e0\AndroidManifest.xml:23:5-82
+MERGED from [com.google.android.gms:play-services-iid:15.0.1] C:\Users\rhoderickb\.gradle\caches\transforms-1\files-1.1\play-services-iid-15.0.1.aar\ae6b5c7459b806d561ef2c3cb57357b3\AndroidManifest.xml:23:5-82
+MERGED from [com.google.android.gms:play-services-iid:15.0.1] C:\Users\rhoderickb\.gradle\caches\transforms-1\files-1.1\play-services-iid-15.0.1.aar\ae6b5c7459b806d561ef2c3cb57357b3\AndroidManifest.xml:23:5-82
 	android:name
 		ADDED from [com.google.firebase:firebase-iid:16.0.0] C:\Users\rhoderickb\.gradle\caches\transforms-1\files-1.1\firebase-iid-16.0.0.aar\9baf0d9106b956306be733437328c649\AndroidManifest.xml:26:22-79
-permission#${applicationId}.permission.C2D_MESSAGE
-ADDED from [com.google.firebase:firebase-iid:16.0.0] C:\Users\rhoderickb\.gradle\caches\transforms-1\files-1.1\firebase-iid-16.0.0.aar\9baf0d9106b956306be733437328c649\AndroidManifest.xml:28:5-30:47
-	android:protectionLevel
-		ADDED from [com.google.firebase:firebase-iid:16.0.0] C:\Users\rhoderickb\.gradle\caches\transforms-1\files-1.1\firebase-iid-16.0.0.aar\9baf0d9106b956306be733437328c649\AndroidManifest.xml:30:9-44
-	android:name
-		ADDED from [com.google.firebase:firebase-iid:16.0.0] C:\Users\rhoderickb\.gradle\caches\transforms-1\files-1.1\firebase-iid-16.0.0.aar\9baf0d9106b956306be733437328c649\AndroidManifest.xml:29:9-63
-permission#com.reactnativemastersv2.permission.C2D_MESSAGE
-ADDED from [com.google.firebase:firebase-iid:16.0.0] C:\Users\rhoderickb\.gradle\caches\transforms-1\files-1.1\firebase-iid-16.0.0.aar\9baf0d9106b956306be733437328c649\AndroidManifest.xml:28:5-30:47
-	android:protectionLevel
-		ADDED from [com.google.firebase:firebase-iid:16.0.0] C:\Users\rhoderickb\.gradle\caches\transforms-1\files-1.1\firebase-iid-16.0.0.aar\9baf0d9106b956306be733437328c649\AndroidManifest.xml:30:9-44
-	android:name
-		ADDED from [com.google.firebase:firebase-iid:16.0.0] C:\Users\rhoderickb\.gradle\caches\transforms-1\files-1.1\firebase-iid-16.0.0.aar\9baf0d9106b956306be733437328c649\AndroidManifest.xml:29:9-63
-uses-permission#${applicationId}.permission.C2D_MESSAGE
-ADDED from [com.google.firebase:firebase-iid:16.0.0] C:\Users\rhoderickb\.gradle\caches\transforms-1\files-1.1\firebase-iid-16.0.0.aar\9baf0d9106b956306be733437328c649\AndroidManifest.xml:32:5-79
-	android:name
-		ADDED from [com.google.firebase:firebase-iid:16.0.0] C:\Users\rhoderickb\.gradle\caches\transforms-1\files-1.1\firebase-iid-16.0.0.aar\9baf0d9106b956306be733437328c649\AndroidManifest.xml:32:22-76
-uses-permission#com.reactnativemastersv2.permission.C2D_MESSAGE
-ADDED from [com.google.firebase:firebase-iid:16.0.0] C:\Users\rhoderickb\.gradle\caches\transforms-1\files-1.1\firebase-iid-16.0.0.aar\9baf0d9106b956306be733437328c649\AndroidManifest.xml:32:5-79
-	android:name
-		ADDED from [com.google.firebase:firebase-iid:16.0.0] C:\Users\rhoderickb\.gradle\caches\transforms-1\files-1.1\firebase-iid-16.0.0.aar\9baf0d9106b956306be733437328c649\AndroidManifest.xml:32:22-76
 meta-data#com.google.firebase.components:com.google.firebase.iid.Registrar
 ADDED from [com.google.firebase:firebase-iid:16.0.0] C:\Users\rhoderickb\.gradle\caches\transforms-1\files-1.1\firebase-iid-16.0.0.aar\9baf0d9106b956306be733437328c649\AndroidManifest.xml:36:13-38:85
 	android:value
@@ -401,18 +496,6 @@ intent-filter#action:name:com.google.android.c2dm.intent.RECEIVE+category:name:$
 ADDED from [com.google.firebase:firebase-iid:16.0.0] C:\Users\rhoderickb\.gradle\caches\transforms-1\files-1.1\firebase-iid-16.0.0.aar\9baf0d9106b956306be733437328c649\AndroidManifest.xml:45:13-49:29
 intent-filter#action:name:com.google.android.c2dm.intent.RECEIVE+category:name:com.reactnativemastersv2
 ADDED from [com.google.firebase:firebase-iid:16.0.0] C:\Users\rhoderickb\.gradle\caches\transforms-1\files-1.1\firebase-iid-16.0.0.aar\9baf0d9106b956306be733437328c649\AndroidManifest.xml:45:13-49:29
-action#com.google.android.c2dm.intent.RECEIVE
-ADDED from [com.google.firebase:firebase-iid:16.0.0] C:\Users\rhoderickb\.gradle\caches\transforms-1\files-1.1\firebase-iid-16.0.0.aar\9baf0d9106b956306be733437328c649\AndroidManifest.xml:46:17-81
-	android:name
-		ADDED from [com.google.firebase:firebase-iid:16.0.0] C:\Users\rhoderickb\.gradle\caches\transforms-1\files-1.1\firebase-iid-16.0.0.aar\9baf0d9106b956306be733437328c649\AndroidManifest.xml:46:25-78
-category#${applicationId}
-ADDED from [com.google.firebase:firebase-iid:16.0.0] C:\Users\rhoderickb\.gradle\caches\transforms-1\files-1.1\firebase-iid-16.0.0.aar\9baf0d9106b956306be733437328c649\AndroidManifest.xml:48:17-61
-	android:name
-		ADDED from [com.google.firebase:firebase-iid:16.0.0] C:\Users\rhoderickb\.gradle\caches\transforms-1\files-1.1\firebase-iid-16.0.0.aar\9baf0d9106b956306be733437328c649\AndroidManifest.xml:48:27-58
-category#com.reactnativemastersv2
-ADDED from [com.google.firebase:firebase-iid:16.0.0] C:\Users\rhoderickb\.gradle\caches\transforms-1\files-1.1\firebase-iid-16.0.0.aar\9baf0d9106b956306be733437328c649\AndroidManifest.xml:48:17-61
-	android:name
-		ADDED from [com.google.firebase:firebase-iid:16.0.0] C:\Users\rhoderickb\.gradle\caches\transforms-1\files-1.1\firebase-iid-16.0.0.aar\9baf0d9106b956306be733437328c649\AndroidManifest.xml:48:27-58
 service#com.google.firebase.iid.FirebaseInstanceIdService
 ADDED from [com.google.firebase:firebase-iid:16.0.0] C:\Users\rhoderickb\.gradle\caches\transforms-1\files-1.1\firebase-iid-16.0.0.aar\9baf0d9106b956306be733437328c649\AndroidManifest.xml:56:9-62:19
 	android:exported

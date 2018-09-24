@@ -9,6 +9,9 @@ package com.reactnativemastersv2;
 
 public final class Manifest {
   public static final class permission {
+    /**
+     * Permissions required for enabling GCM.
+     */
     public static final String C2D_MESSAGE="com.reactnativemastersv2.permission.C2D_MESSAGE";
   }
 

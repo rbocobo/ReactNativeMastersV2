@@ -16,6 +16,7 @@ import org.pgsqlite.SQLitePluginPackage;
 import com.wix.RNCameraKit.RNCameraKitPackage;
 import io.invertase.firebase.RNFirebasePackage;
 import io.invertase.firebase.firestore.RNFirebaseFirestorePackage;
+import com.wix.reactnativenotifications.RNNotificationsPackage;
 
 public class MainApplication extends Application implements ReactApplication {
 
@@ -32,7 +33,8 @@ public class MainApplication extends Application implements ReactApplication {
           new RNCameraKitPackage(),
           new MainReactPackage(),
           new RNFirebasePackage(),
-          new RNFirebaseFirestorePackage()
+          new RNFirebaseFirestorePackage(),
+          new RNNotificationsPackage(MainApplication.this)
       );
     }
 

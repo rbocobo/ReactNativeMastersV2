@@ -275,6 +275,7 @@ com/reactnativemastersv2/BuildConfig.class
 com/reactnativemastersv2/MainApplication$1.class
 com/reactnativemastersv2/MainApplication.class
 com/wix/RNCameraKit/RNCameraKitPackage.class
+com/wix/reactnativenotifications/RNNotificationsPackage.class
 io/grpc/ClientInterceptor.class
 io/grpc/ExperimentalApi.class
 io/grpc/Internal.class

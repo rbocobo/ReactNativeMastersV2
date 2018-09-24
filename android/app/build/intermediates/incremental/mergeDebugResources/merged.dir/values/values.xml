@@ -568,6 +568,7 @@
     <string name="default_web_client_id" translatable="false">628899893664-0dn0iuepl4h30flbgv9fa3u5m1lk2u9v.apps.googleusercontent.com</string>
     <string name="firebase_database_url" translatable="false">https://mmreactnative.firebaseio.com</string>
     <string name="gcm_defaultSenderId" translatable="false">628899893664</string>
+    <string name="gcm_fallback_notification_channel_label">Miscellaneous</string>
     <string name="google_api_key" translatable="false">AIzaSyAr7oiaV1oCYknw9VtOR5-Hcmbf5lDeRdg</string>
     <string name="google_app_id" translatable="false">1:628899893664:android:e478a9fdab3e5419</string>
     <string name="google_crash_reporting_api_key" translatable="false">AIzaSyAr7oiaV1oCYknw9VtOR5-Hcmbf5lDeRdg</string>

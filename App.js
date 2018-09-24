@@ -4,29 +4,69 @@ import FlatListScreen from './src/components/FlatListScreen';
 import { createStackNavigator } from 'react-navigation';
 import ItemDetailScreen from './src/components/ItemDetailScreen';
 import { fromLeft } from 'react-navigation-transitions'
-import { createStore, applyMiddleware } from 'redux';
+import { createStore, combineReducers, applyMiddleware, compose } from 'redux';
 import { Provider, connect } from 'react-redux';
 import axios from 'axios';
 import axiosMiddleware from 'redux-axios-middleware';
 import thunk from 'redux-thunk';
 import reducer from './src/ducks/reducer';
-//import rockets from './src/ducks/rockets';
-//import connectivity from './src/ducks/connectivity';
+
+
+//firebase/firestore
+import { reactReduxFirebase, firebaseStateReducer } from 'react-redux-firebase';
+import firebase from 'firebase';
+import { reduxFirestore, firestoreReducer } from 'redux-firestore';
+import 'firebase/firestore';
+import 'firebase/functions';
+
 
 import RocketScreen from './src/components/RocketScreen'
+import CameraScreen from './src/components/CameraScreen';
+import GalleryScreen from './src/components/GalleryScreen';
+import AlbumsScreen from './src/components/AlbumsScreen';
 
 
-const client = axios.create({
-  baseURL: 'https://launchlibrary.net/1.4',
-  responseType: 'json'
-});
+const firebaseConfig = {
+  apiKey: 'AIzaSyAr7oiaV1oCYknw9VtOR5-Hcmbf5lDeRdg',
+  databaseURL: 'https://mmreactnative.firebaseio.com',
+  storageBucket: 'mmreactnative.appspot.com',
+  projectId: 'mmreactnative'
+}
 
-const store = createStore(
-  reducer, 
-  applyMiddleware(
-    axiosMiddleware(client), 
-    thunk)
-  );
+firebase.initializeApp(firebaseConfig);
+firebase.firestore().settings({ timestampsInSnapshots: true })
+// react-redux-firebase options
+const rrfConfig = {
+  userProfile: 'users'
+}
+
+//Add redux Firebase to compose
+const createStoreWithFirebase = compose(
+  reduxFirestore(firebase),
+  reactReduxFirebase(firebase, rrfConfig)
+)(createStore)
+
+// Add firebase and firestore to reducers
+const rootReducer = combineReducers({
+  firebase: firebaseStateReducer,
+  firestore: firestoreReducer
+})
+
+// Create store with reducers and initial state
+const initialState = {}
+const store = createStoreWithFirebase(rootReducer, initialState)
+
+// const client = axios.create({
+//   baseURL: 'https://launchlibrary.net/1.4',
+//   responseType: 'json'
+// });
+
+// const store = createStore(
+//   reducer, 
+//   applyMiddleware(
+//     axiosMiddleware(client), 
+//     thunk)
+//   );
 
 export default class App extends Component {
   render() {
@@ -55,10 +95,23 @@ const RootStack = createStackNavigator({
     navigationOptions: {
       title: "Rockets"
     }
+  },
+  Album: {
+    screen: AlbumsScreen,
+    navigationOptions: {
+      headerMode: 'none'
+    }
+  },
+  Camera: {
+    screen: CameraScreen,
+    navigationOptions: {
+      headerMode: 'none'
+    }
   }
 }, {
-  initialRouteName: 'Rocket',
-  transitionConfig: () => fromLeft()
+  initialRouteName: 'Album',
+  transitionConfig: () => fromLeft(),
+  headerMode: "none"
 })
 
 const styles = StyleSheet.create({

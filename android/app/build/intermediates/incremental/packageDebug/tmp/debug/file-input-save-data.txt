@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Tue Sep 18 00:41:18 CST 2018
+#Tue Sep 18 17:41:05 CST 2018
 17.baseType=DIRECTORY
 4.path=lib/armeabi-v7a/libyoga.so
 25.base=D\:\\react-native\\ReactNativeMastersV2\\android\\app\\build\\intermediates\\transforms\\mergeJniLibs\\debug\\0
