@@ -1,20 +1,34 @@
 import React, { Component } from 'react';
-import { View, Stylesheet } from 'react-native';
-import { CameraKitGalleryView } from 'react-native-camera-kit';
+import { View, Stylesheet, Icon } from 'react-native';
+import { firestoreConnect } from 'react-redux-firebase';
+import { CameraKitGalleryView, CameraKitGallery } from 'react-native-camera-kit';
+import uuid from 'uuid';
+import { NotificationsAndroid, PendingNotifications } from 'react-native-notifications';
+import { RNNotificationBanner } from 'react-native-notification-banner';
+import icon from 'react-native-vector-icons/FontAwesome';
 
-export default class GalleryScreen extends Component{
-
+let copy = <Icon name="cloud-upload" size={24} color="#FFFFFF" family={"FontAwesome"} />;
+class GalleryScreen extends Component{
+    albums = null;
     state = {
-        album: this.props.albumName,
+        album: null,
         images: {},
         shouldRenderCameraScreen: false
     }
+
+    componentDidMount(){
+
+        CameraKitGallery.getAlbumsWithThumbnails().then(albums => {
+            //const [ { album } ] = albums.albums;
+            if(albums.albums.length > 0){
+            this.setState({album : albums.albums[0].albumName});
+            }
+        })
+    }
+
     render(){
         
-        // if (this.state.shouldRenderCameraScreen) {
-        //     return (<CameraScreen/>);
-        // }
-
+        if(this.state.album){
         return(
             <CameraKitGalleryView
                 ref={(gallery) => {
@@ -48,18 +62,44 @@ export default class GalleryScreen extends Component{
                 }}
                 onCustomButtonPress={() => this.setState({shouldRenderCameraScreen: true})}
             />
-        )
+        )}else{
+            return (<View></View>)
+        }
     }
 
     onTapImage = (event) => {
         const uri = event.nativeEvent.selected;
-        console.log('Tapped on an image: ' + uri);
-    
-        if (this.state.images[uri]) {
-          delete this.state.images[uri];
-        } else {
-          this.state.images[uri] = true;
-        }
-        this.setState({images: {...this.state.images}})
+        this.uploadImageAsync(`file://${uri}`);
+        this.props.navigation.navigate("Album");
+
       }
+
+     uploadImageAsync = async (uri) => {
+        const response = await fetch(uri);
+        const blob = await response.blob();
+        const ref = this.props.firebase
+            .storage()
+            .ref()
+            .child(uuid.v4());
+        
+        const snapshot = await ref.put(blob);
+        snapshot.ref.getDownloadURL().then((uri) => {
+            const fireref = this.props.firestore.collection('posts');
+            fireref.add({
+                title: 'New York',
+                uri
+            }).then(e=>{
+                NotificationsAndroid.localNotification({title: "Album Update", body: "A new image has been added to your album"});
+                RNNotificationBanner.Show({
+                    title: "Magenic Masters - React Native",
+                    subTitle: "A new image has been uploaded",
+                    withIcon: true,
+                    icon: copy
+                })
+            });
+        })
+
+    }
 }
+
+export default firestoreConnect()(GalleryScreen)

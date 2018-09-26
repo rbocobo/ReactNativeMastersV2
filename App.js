@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { StyleSheet, Animated, Easing, YellowBox } from 'react-native';
 import FlatListScreen from './src/components/FlatListScreen';
-import { createStackNavigator } from 'react-navigation';
+import { createStackNavigator, createBottomTabNavigator } from 'react-navigation';
 import ItemDetailScreen from './src/components/ItemDetailScreen';
 import { fromLeft } from 'react-navigation-transitions'
 import { createStore, combineReducers, applyMiddleware, compose } from 'redux';
@@ -10,7 +10,7 @@ import axios from 'axios';
 import axiosMiddleware from 'redux-axios-middleware';
 import thunk from 'redux-thunk';
 import reducer from './src/ducks/reducer';
-
+import rootReducer from './src/ducks/posts';
 
 //firebase/firestore
 import { reactReduxFirebase, firebaseStateReducer } from 'react-redux-firebase';
@@ -74,10 +74,10 @@ const createStoreWithFirebase = compose(
 )(createStore)
 
 // Add firebase and firestore to reducers
-const rootReducer = combineReducers({
-  firebase: firebaseStateReducer,
-  firestore: firestoreReducer
-})
+// const rootReducer = combineReducers({
+//   firebase: firebaseStateReducer,
+//   firestore: firestoreReducer
+// })
 
 // Create store with reducers and initial state
 const initialState = {}
@@ -135,12 +135,30 @@ const RootStack = createStackNavigator({
       headerMode: 'none'
     }
   },
-  Camera: {
-    screen: CameraScreen,
-    navigationOptions: {
+  // Camera: {
+  //   screen: CameraScreen,
+  //   navigationOptions: {
+  //     headerMode: 'none'
+  //   }
+  // },
+
+  Images: {
+    screen: createBottomTabNavigator({
+      Camera: {
+        screen: CameraScreen,
+        navigationOptions: {
+          headerMode: 'none'
+        }
+      },
+      Gallery: {
+        screen: GalleryScreen
+      }
+    },{
+      initialRouteName: 'Camera',
       headerMode: 'none'
-    }
+    })
   }
+
 }, {
   initialRouteName: 'Album',
   transitionConfig: () => fromLeft(),

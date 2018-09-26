@@ -20,7 +20,7 @@ class AlbumsScreen extends Component {
                 </View>
                 
                 <View style={{flex: 1, justifyContent: 'center', alignItems: "center"}}>
-                <TouchableOpacity onPress={()=>  this.props.navigation.navigate('Camera')}>
+                <TouchableOpacity onPress={()=>  this.props.navigation.navigate('Images')}>
                 <Image style={{height: 32, width: 32}} source={require('../../../assets/images/shutter.png')}></Image>
                 </TouchableOpacity>
                     
