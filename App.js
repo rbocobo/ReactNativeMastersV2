@@ -111,7 +111,7 @@ export default class App extends Component {
   }
 }
 
-YellowBox.ignoreWarnings(["Warning:"]);
+YellowBox.ignoreWarnings(["Warning:", 'Setting a timer']);
 
 const RootStack = createStackNavigator({
   Home: {

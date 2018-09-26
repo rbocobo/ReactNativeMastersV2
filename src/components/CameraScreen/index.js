@@ -1,11 +1,15 @@
 import React, { Component } from 'react';
-import { Alert, PermissionsAndroid  } from 'react-native';
+import { Alert, PermissionsAndroid, Icon  } from 'react-native';
 import { connect } from 'react-redux';
 import { CameraKitCameraScreen, CameraKitCamera, onCapture } from 'react-native-camera-kit';
 import { capturePhoto, PHOTO_CAPTURE_SUCCESS } from '../../ducks/mockposts';
 import { firebaseConnect, firestoreConnect } from 'react-redux-firebase';
 import uuid from 'uuid';
 import { NotificationsAndroid, PendingNotifications } from 'react-native-notifications';
+import { RNNotificationBanner } from 'react-native-notification-banner';
+import icon from 'react-native-vector-icons/FontAwesome';
+
+let copy = <Icon name="cloud-upload" size={24} color="#FFFFFF" family={"FontAwesome"} />;
 
 class CameraScreen extends Component {
     
@@ -98,7 +102,7 @@ class CameraScreen extends Component {
             case 'capture':
                 const [{ uri }] = event.captureImages;
                 this.uploadImageAsync(`file://${uri}`);
-                //this.props.navigation.navigate("Album");
+                this.props.navigation.navigate("Album");
             default:
                 return;
             
@@ -123,6 +127,12 @@ class CameraScreen extends Component {
                 uri
             }).then(e=>{
                 NotificationsAndroid.localNotification({title: "Album Update", body: "A new image has been added to your album"});
+                RNNotificationBanner.Show({
+                    title: "Magenic Masters - React Native",
+                    subTitle: "A new image has been uploaded",
+                    withIcon: true,
+                    icon: copy
+                })
             });
         })
 

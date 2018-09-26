@@ -15,6 +15,10 @@
     <color name="abc_search_url_text_selected">@android:color/black</color>
     <color name="accent_material_dark">@color/material_deep_teal_200</color>
     <color name="accent_material_light">@color/material_deep_teal_500</color>
+    <color name="alert_default_error_background">#F44336</color>
+    <color name="alert_default_icon_color">@android:color/white</color>
+    <color name="alert_default_text_color">@android:color/white</color>
+    <color name="alerter_default_success_background">#4CAF50</color>
     <color name="background_floating_material_dark">@color/material_grey_800</color>
     <color name="background_floating_material_light">@android:color/white</color>
     <color name="background_material_dark">@color/material_grey_850</color>
@@ -102,7 +106,9 @@
     <declare-styleable name="ActionMenuView"/>
     <declare-styleable name="ActionMode"><attr name="titleTextStyle"/><attr name="subtitleTextStyle"/><attr name="background"/><attr name="backgroundSplit"/><attr name="height"/><attr format="reference" name="closeItemLayout"/></declare-styleable>
     <declare-styleable name="ActivityChooserView"><attr format="string" name="initialActivityCount"/><attr format="reference" name="expandActivityOverflowButtonDrawable"/></declare-styleable>
+    <declare-styleable name="Alert"><attr format="reference" name="alertIcon"/><attr format="color" name="alertBackgroundColor"/><attr format="string" name="alertTitle"/><attr format="string" name="alertText"/></declare-styleable>
     <declare-styleable name="AlertDialog"><attr name="android:layout"/><attr format="reference" name="buttonPanelSideLayout"/><attr format="reference" name="listLayout"/><attr format="reference" name="multiChoiceItemLayout"/><attr format="reference" name="singleChoiceItemLayout"/><attr format="reference" name="listItemLayout"/><attr format="boolean" name="showTitle"/></declare-styleable>
+    <declare-styleable name="Alerter"><attr format="reference" name="alertStyle"/></declare-styleable>
     <declare-styleable name="AppCompatImageView"><attr name="android:src"/><attr format="reference" name="srcCompat"/><attr format="color" name="tint"/><attr name="tintMode">
             
             <enum name="src_over" value="3"/>
@@ -426,6 +432,19 @@
     <dimen name="abc_text_size_subtitle_material_toolbar">16dp</dimen>
     <dimen name="abc_text_size_title_material">20sp</dimen>
     <dimen name="abc_text_size_title_material_toolbar">20dp</dimen>
+    <dimen name="alerter_activity_horizontal_margin">18dp</dimen>
+    <dimen name="alerter_activity_vertical_margin">16dp</dimen>
+    <dimen name="alerter_alert_icn_size">38dp</dimen>
+    <dimen name="alerter_alert_max_height">84dp</dimen>
+    <dimen name="alerter_alert_min_height">64dp</dimen>
+    <dimen name="alerter_alert_negative_margin_top">-26dp</dimen>
+    <dimen name="alerter_alert_padding">30dp</dimen>
+    <dimen name="alerter_padding_default">16dp</dimen>
+    <dimen name="alerter_padding_half">8dp</dimen>
+    <dimen name="alerter_padding_small">4dp</dimen>
+    <dimen name="alerter_progress_bar_size">2dp</dimen>
+    <dimen name="alerter_text_medium">18sp</dimen>
+    <dimen name="alerter_text_small">14sp</dimen>
     <dimen name="border_length">30dp</dimen>
     <dimen name="compat_button_inset_horizontal_material">4dp</dimen>
     <dimen name="compat_button_inset_vertical_material">6dp</dimen>
@@ -573,11 +592,36 @@
     <string name="google_app_id" translatable="false">1:628899893664:android:e478a9fdab3e5419</string>
     <string name="google_crash_reporting_api_key" translatable="false">AIzaSyAr7oiaV1oCYknw9VtOR5-Hcmbf5lDeRdg</string>
     <string name="google_storage_bucket" translatable="false">mmreactnative.appspot.com</string>
+    <string name="lib_name">Alerter</string>
+    <string name="msg.alert_cleared">Alert Cleared</string>
+    <string name="msg.no_alert_showing">No Alert Showing</string>
     <string name="project_id" translatable="false">mmreactnative</string>
     <string name="search_menu_title">Search</string>
     <string name="status_bar_notification_info_overflow">999+</string>
     <style name="AlertDialog.AppCompat" parent="Base.AlertDialog.AppCompat"/>
     <style name="AlertDialog.AppCompat.Light" parent="Base.AlertDialog.AppCompat.Light"/>
+    <style name="AlertStyle" parent="@android:style/Widget">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">@dimen/alerter_alert_min_height</item>
+        <item name="android:maxHeight">@dimen/alerter_alert_max_height</item>
+        <item name="android:clickable">true</item>
+        <item name="android:gravity">top</item>
+        <item name="android:paddingTop">@dimen/alerter_alert_padding</item>
+    </style>
+    <style name="AlertTextAppearance">
+        <item name="android:textColor">@color/alert_default_text_color</item>
+    </style>
+    <style name="AlertTextAppearance.Text">
+        <item name="android:textSize">@dimen/alerter_text_small</item>
+    </style>
+    <style name="AlertTextAppearance.Title">
+        <item name="android:textSize">@dimen/alerter_text_medium</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="AlertTheme" parent="Base.Theme.AppCompat">
+        <item name="alertStyle">@style/AlertStyle</item>
+    </style>
     <style name="Animation.AppCompat.Dialog" parent="Base.Animation.AppCompat.Dialog"/>
     <style name="Animation.AppCompat.DropDownUp" parent="Base.Animation.AppCompat.DropDownUp"/>
     <style name="Animation.AppCompat.Tooltip" parent="Base.Animation.AppCompat.Tooltip"/>

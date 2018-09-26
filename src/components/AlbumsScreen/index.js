@@ -14,7 +14,7 @@ class AlbumsScreen extends Component {
         return (
             <View style={styles.container}>
                 <View style={{flex:9}}>
-                {this.props.posts && <Swiper smoothTransition loop stack>
+                {this.props.posts && <Swiper smoothTransition loop stack backPressToBack>
                     { this.props.posts.map(item => this.renderRow(item)) }
                 </Swiper>}
                 </View>

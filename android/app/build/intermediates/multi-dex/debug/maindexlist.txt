@@ -271,6 +271,7 @@ com/google/gson/annotations/SerializedName.class
 com/google/gson/annotations/Since.class
 com/google/gson/annotations/Until.class
 com/google/protobuf/ExperimentalApi.class
+com/oblador/vectoricons/VectorIconsPackage.class
 com/reactnativemastersv2/BuildConfig.class
 com/reactnativemastersv2/MainApplication$1.class
 com/reactnativemastersv2/MainApplication.class
@@ -339,3 +340,4 @@ javax/inject/Qualifier.class
 javax/inject/Scope.class
 javax/inject/Singleton.class
 org/pgsqlite/SQLitePluginPackage.class
+ui/notificationbanner/RNNotificationBannerPackage.class

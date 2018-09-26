@@ -14,12 +14,31 @@
                         "endOffsets": "223"
                     },
                     "to": {
+                        "startLines": "7",
+                        "startColumns": "4",
+                        "startOffsets": "309",
+                        "endLines": "10",
+                        "endColumns": "12",
+                        "endOffsets": "477"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\rhoderickb\\.gradle\\caches\\transforms-1\\files-1.1\\alerter-2.0.6.aar\\a5adc60d75b247657ab87acf5d74430c\\res\\values-v16\\values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "5",
+                        "endColumns": "12",
+                        "endOffsets": "238"
+                    },
+                    "to": {
                         "startLines": "3",
                         "startColumns": "4",
                         "startOffsets": "121",
                         "endLines": "6",
                         "endColumns": "12",
-                        "endOffsets": "289"
+                        "endOffsets": "304"
                     }
                 },
                 {

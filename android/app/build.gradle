@@ -138,6 +138,8 @@ android {
 }
 
 dependencies {
+    compile project(':react-native-vector-icons')
+    compile project(':react-native-notification-banner')
     implementation fileTree(dir: "libs", include: ["*.jar"])
     implementation "com.android.support:appcompat-v7:27.0.2"
     implementation "com.facebook.react:react-native:+"  // From node_modules

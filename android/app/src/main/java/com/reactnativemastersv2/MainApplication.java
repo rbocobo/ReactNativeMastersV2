@@ -3,6 +3,8 @@ package com.reactnativemastersv2;
 import android.app.Application;
 
 import com.facebook.react.ReactApplication;
+import com.oblador.vectoricons.VectorIconsPackage;
+import ui.notificationbanner.RNNotificationBannerPackage;
 import io.invertase.firebase.RNFirebasePackage;
 import com.facebook.react.ReactNativeHost;
 import com.facebook.react.ReactPackage;
@@ -32,6 +34,8 @@ public class MainApplication extends Application implements ReactApplication {
           new SQLitePluginPackage(),
           new RNCameraKitPackage(),
           new MainReactPackage(),
+            new VectorIconsPackage(),
+            new RNNotificationBannerPackage(),
           new RNFirebasePackage(),
           new RNFirebaseFirestorePackage(),
           new RNNotificationsPackage(MainApplication.this)
