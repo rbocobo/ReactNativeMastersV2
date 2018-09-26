@@ -25,7 +25,34 @@ import CameraScreen from './src/components/CameraScreen';
 import GalleryScreen from './src/components/GalleryScreen';
 import AlbumsScreen from './src/components/AlbumsScreen';
 
+/** Notifications */
+import { NotificationsAndroid, PendingNotifications } from 'react-native-notifications';
 
+let mainScreen;
+
+onPushRegistered = () => {
+  if(mainScreen){
+    mainScreen.onPushRegistered();
+  }
+}
+
+onNotificationOpened = (notification) => {
+  if(mainScreen) {
+    mainScreen.onNotificationOpened(notification);
+  }
+}
+
+onNotificationReceived = (notification) => {
+  if(mainScreen){
+    mainScreen.onNotificationReceived(notification);
+  }
+}
+NotificationsAndroid.setRegistrationTokenUpdateListener(onPushRegistered);
+NotificationsAndroid.setNotificationOpenedListener(onNotificationOpened);
+NotificationsAndroid.setNotificationReceivedListener(onNotificationReceived);
+
+
+/** */
 const firebaseConfig = {
   apiKey: 'AIzaSyAr7oiaV1oCYknw9VtOR5-Hcmbf5lDeRdg',
   databaseURL: 'https://mmreactnative.firebaseio.com',
@@ -69,6 +96,12 @@ const store = createStoreWithFirebase(rootReducer, initialState)
 //   );
 
 export default class App extends Component {
+
+  constructor(props){
+    super(props);
+    mainScreen = this;
+  }
+
   render() {
     return (
       <Provider store={store}>

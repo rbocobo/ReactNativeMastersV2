@@ -4,8 +4,10 @@ import { connect } from 'react-redux'
 import { compose } from 'redux'
 import { firestoreConnect } from 'react-redux-firebase';
 import Swiper from 'react-native-swiper-animated';
+import { PHOTO_CAPTURE_SUCCESS } from '../../ducks/mockposts';
 
 class AlbumsScreen extends Component {
+
 
     render() {
         
@@ -18,7 +20,7 @@ class AlbumsScreen extends Component {
                 </View>
                 
                 <View style={{flex: 1, justifyContent: 'center', alignItems: "center"}}>
-                <TouchableOpacity onPress={()=> this.props.navigation.navigate('Camera')}>
+                <TouchableOpacity onPress={()=>  this.props.navigation.navigate('Camera')}>
                 <Image style={{height: 32, width: 32}} source={require('../../../assets/images/shutter.png')}></Image>
                 </TouchableOpacity>
                     
